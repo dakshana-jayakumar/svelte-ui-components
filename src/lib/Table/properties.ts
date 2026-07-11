@@ -78,6 +78,7 @@ export type TableImageTwoLineTextCellData = {
 export type TableTagArrayCellItem = {
   text: string;
   classes?: string;
+  testId?: string;
 };
 
 /** Cell shape for `type: 'avatar-stack'` — initials chips with overflow. */

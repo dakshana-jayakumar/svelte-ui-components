@@ -13,7 +13,7 @@
   data-pw={typeof testId === 'string' ? testId : null}
 >
   {#each { length: count } as _, i (i)}
-    <span class="dot" class:pulse={animation === 'pulse'} style="--i: {i}"></span>
+    <span class="dot" class:pulse={animation === 'pulse'} style="--i: {i}" data-pw={typeof testId === 'string' ? `${testId}-dot-${i}` : null}></span>
   {/each}
 </span>
 
